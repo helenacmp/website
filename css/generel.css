@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* –––––––––––––––––––––– Font-face –––––––––––––––––––––– */
+
+@font-face {
+  font-family: "Chromate";
+  src: url("../fonts/Chromate-Regular.ttf");
+}
+
+/* –––––––––––––––––––––– Typografier –––––––––––––––––––––– */
+
+h1 {
+  font-family: "Chromate";
+  color: white;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "Chromate";
+  color: white;
+  font-size: 40px;
+}
+h3 {
+  font-family: "Chromate";
+  color: white;
+  font-size: 20px;
+}
+h4 {
+  font-family: "Chromate";
+  color: white;
+  font-size: 16px;
+}
+p {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+/* ––––––––––––––––––––––– Navigation ––––––––––––––––––– */
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  width: 100%;
+  top: 10px;
+  left: 0;
+  padding: 5px 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 40px;
+  margin: 0 40px;
+}
+
+/* links i navigationslinjen */
+.nav-item {
+  list-style: none;
+  display: inline-block;
+  display: flex;
+  position: relative;
+}
+
+/* styling af tekst i navigationslinjen */
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Chromate";
+  transition: all 0.3s;
+}
+
+.nav-link {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+/* ––––––––––––––––––– Dropdown menu ––––––––––––––––––– */
+.dropdown_menu {
+  display: none;
+}
+.navbar ul li:hover .dropdown_menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+.navbar ul li:hover .dropdown_menu ul {
+  display: block;
+  margin: 10px;
+}
+.navbar ul li:hover i.dropdown_menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+/* links i dropdown menu */
+.dropdown-item {
+  list-style: none;
+  display: inline-block;
+  display: flex;
+  position: relative;
+  color: white;
+}
+/* styling af tekst i dropdown menu */
+.dropdown-link {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: "Chromate";
+  margin: 10px;
+
+  transition: all 0.3s;
+}
+
+/* ––––––––––––––––––– Forside ––––––––––––––––––– */
+
+.logo {
+  max-width: 60%;
+  position: relative;
+  top: 12%;
+  left: 15%;
+  grid-column: 2/3;
+  transition: 1s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.velkommen {
+  position: relative;
+  grid-column: 1/2;
+  top: 58%;
+  left: 10%;
+}
+
+/* ––––––––––––––––––– Header på sider ––––––––––––––––––– */
+
+.header {
+  position: relative;
+  margin-top: 7%;
+}
+
+.overskrift {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.center {
+  position: relative;
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 2%;
+}
+
+/* ––––––––––––––––––– Portfolio forside ––––––––––––––––––– */
+
+#portfolio {
+  background: url(../assets/red-orange.png) no-repeat;
+}
+
+body {
+  background: url(../assets/red-orange.png) no-repeat;
+}
+
+.col_4 {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  top: 40%;
+  right: 50%;
+  gap: 20px;
+}
+
+.box_1,
+.box_2,
+.box_3,
+.box_4 {
+  background-color: white;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.box_1:hover,
+.box_2:hover,
+.box_3:hover,
+.box_4:hover {
+  transform: scale(1.1);
+}
+
+.black {
+  color: black;
+  padding: 5%;
+}
+
+/* ––––––––––––––––––– Basic web ––––––––––––––––––– */
+
+.header_background {
+  background: url(../assets/red-orange.png) no-repeat;
+  background-size: cover;
+  height: 30vh;
+}
