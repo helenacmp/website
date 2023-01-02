@@ -316,3 +316,11 @@ col_1_2 img {
   border-style: solid;
   border-width: thin;
 }
+
+/* ––––––––––––––––––– Animation ––––––––––––––––––– */
+
+.header_background_animation {
+  background: url(../assets/purple-orange.png) no-repeat;
+  background-size: cover;
+  height: 45vh;
+}
