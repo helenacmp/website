@@ -261,6 +261,14 @@ ul {
   width: 400px;
 }
 
+.web_box_wide {
+  border-style: solid;
+  border-color: rgb(69, 68, 68);
+  border-radius: 15px;
+  border-width: thin;
+  width: 600px;
+}
+
 col_1_2 img {
   width: 100%;
   margin: 5%;
@@ -283,6 +291,27 @@ col_1_2 img {
 }
 
 .col_1_1 img {
+  width: 100%;
+  border-style: solid;
+  border-width: thin;
+}
+
+/* ––––––––––––––––––– Basic UX ––––––––––––––––––– */
+
+.header_background_ux {
+  background: url(../assets/green-orange.png) no-repeat;
+  background-size: cover;
+  height: 45vh;
+}
+
+.col_1_1_1 {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.col_1_1_1 img {
   width: 100%;
   border-style: solid;
   border-width: thin;
