@@ -195,7 +195,7 @@ ul {
 .col_4 {
   margin: 5%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   top: 40%;
   right: 50%;
   gap: 20px;
@@ -204,7 +204,8 @@ ul {
 .box_1,
 .box_2,
 .box_3,
-.box_4 {
+.box_4,
+.box_5 {
   background-color: white;
   border-radius: 15px;
   text-decoration: none;
@@ -214,7 +215,8 @@ ul {
 .box_1:hover,
 .box_2:hover,
 .box_3:hover,
-.box_4:hover {
+.box_4:hover,
+.box_5:hover {
   transform: scale(1.1);
 }
 
