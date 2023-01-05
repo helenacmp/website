@@ -394,9 +394,6 @@ col_1_2 img {
 }
 
 .col_1_1_1_1 {
-  background: url(../assets/red-orange.png) no-repeat;
-  background-size: cover;
-  height: 60vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -405,21 +402,25 @@ col_1_2 img {
   width: 80%;
 }
 
-.center_content {
-  position: relative;
-  text-align: left;
-  max-width: 550px;
-  margin: auto;
-  margin-top: 2%;
-}
-
 .tekst_about {
   margin-top: 5%;
 }
 
-.about_image {
-  position: relative;
-  top: 20%;
-  margin: 10%;
-  grid-column: 1/2;
+.col_1_1_about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+  gap: 5%;
+}
+
+.skills {
+  display: inline-block;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: thin;
+  padding: 2%;
+  margin: 2%;
 }
