@@ -133,6 +133,8 @@ ul {
   transition: all 0.3s;
 }
 
+/* ––––––––––––––––––– Divider linje ––––––––––––––––––– */
+
 /* ––––––––––––––––––– Forside ––––––––––––––––––– */
 
 .wrapper {
@@ -301,7 +303,7 @@ col_1_2 img {
 /* ––––––––––––––––––– Basic UX ––––––––––––––––––– */
 
 .header_background_ux {
-  background: url(../assets/green-orange.png) no-repeat;
+  background: url(../assets/red-orange.png) no-repeat;
   background-size: cover;
   height: 45vh;
 }
@@ -322,7 +324,7 @@ col_1_2 img {
 /* ––––––––––––––––––– Animation ––––––––––––––––––– */
 
 .header_background_animation {
-  background: url(../assets/purple-orange.png) no-repeat;
+  background: url(../assets/red-orange.png) no-repeat;
   background-size: cover;
   height: 45vh;
 }
@@ -330,7 +332,7 @@ col_1_2 img {
 /* ––––––––––––––––––– Basic indhold ––––––––––––––––––– */
 
 .header_background_content {
-  background: url(../assets/green-blue.png) no-repeat;
+  background: url(../assets/red-orange.png) no-repeat;
   background-size: cover;
   height: 45vh;
 }
@@ -360,6 +362,7 @@ col_1_2 img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300px;
   gap: 10px;
+  overflow: hidden;
 }
 
 .col_1_1_1_rows img {
@@ -429,6 +432,13 @@ col_1_2 img {
   margin: 2%;
 }
 
-about_image {
-  margin-top: 5%;
+/* ––––––––––––––––––– Footer ––––––––––––––––––– */
+
+.footer_tekst {
+  text-align: center;
+  color: black;
+}
+
+.footer {
+  padding: 5%;
 }
