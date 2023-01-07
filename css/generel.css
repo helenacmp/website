@@ -87,12 +87,10 @@ ul {
   color: white;
   font-size: 20px;
   font-family: "Chromate";
-  transition: all 0.3s;
 }
 
 .nav-link {
   text-decoration: none;
-  transition: all 0.3s;
 }
 
 /* ––––––––––––––––––– Dropdown menu ––––––––––––––––––– */
@@ -129,8 +127,6 @@ ul {
   font-size: 15px;
   font-family: "Chromate";
   margin: 10px;
-
-  transition: all 0.3s;
 }
 
 /* ––––––––––––––––––– Forside ––––––––––––––––––– */
@@ -169,7 +165,7 @@ ul {
 
 .overskrift {
   position: relative;
-  max-width: 500px;
+  max-width: 700px;
   margin: auto;
   text-align: center;
 }
@@ -246,20 +242,19 @@ ul {
 
 /* ––––––––––––––––––– Klik Btn ––––––––––––––––––– */
 
+.klik_btn:hover {
+  background-position: right center;
+}
+
 .klik_btn {
   font-family: "Chromate";
-  color: black;
+  color: white;
   font-size: 16px;
   text-decoration: none;
   border-radius: 15px;
   border-style: solid;
   padding: 15px;
-  transition: 1s;
-  background-color: #f3bf76;
-}
-
-.klik_btn:hover {
-  transform: scale(1.5);
+  background-image: linear-gradient(to right, #f6d365 0%, #cb413c 51%, #f6d365 100%);
 }
 
 /* ––––––––––––––––––– Basic web ––––––––––––––––––– */
@@ -321,6 +316,9 @@ col_1_2 img {
 
 .col_1_1 img {
   width: 100%;
+}
+
+.border {
   border-style: solid;
   border-width: thin;
 }
@@ -419,11 +417,6 @@ col_1_2 img {
   max-width: 800px;
 }
 
-/* .overskrift_about {
-  position: relative;
-  margin: auto;
-} */
-
 .col_1_1_1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -436,10 +429,6 @@ col_1_2 img {
   position: relative;
   margin-top: 45%;
 }
-
-/* .tekst_about {
-  margin-top: 5%;
-} */
 
 .col_1_1_about {
   display: grid;
