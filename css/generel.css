@@ -316,7 +316,7 @@ col_1_2 img {
   margin: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 20px;
 }
 
 .col_1_1 img {
@@ -389,7 +389,7 @@ col_1_2 img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300px;
-  gap: 10px;
+  gap: 20px;
   overflow: hidden;
 }
 

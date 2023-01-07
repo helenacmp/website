@@ -79,18 +79,22 @@
           <a href="https://www.blondestudio.dk/KEA/04_basicanimation/website/index.html" class="klik_btn">FIND MIT SPIL HER</a>
         </div>
       </div>
-      <div class="col_1_1_1">
+      <div class="col_1_1">
         <img src="/assets/04.04.01-queryselector.png" alt="04.04.01-queryselector" />
-        <img src="/assets/04.04.01-baggrund.png" alt="04.04.01 baggrund" />
         <div>
           <h3 class="black_overskrift">Javascript</h3>
           <p class="black_tekst">
             En stor del af opgaven gik med Javascript, som kan få siden til at reagere på forskellige events i forskellige situationer. Her lærte vi bl.a., at man kunne tilgå ethvert element i et HTML dokument med query.selector. I parentesen skriver
-            man navnet på den class eller id, man kalder på. Man kan også lytte efter events på siden, fx et museklik, ved at anvende eventListener, som derefter som regel vil medfølge en anden tilstand. I eksemplet til højre kan man se, at jeg
-            gennem query.selector kalder på et id med navnet ‘start’. Derefter bruger jeg classList som er en propety der tilføjer en klasse. Ved at bruge classList.remove fjerner jeg i stedet en klasse, som i mit tilfælde er en class med navnet
-            ‘hide’.
+            man navnet på den class eller id, man kalder på. Man kan også lytte efter events på siden, fx et museklik, ved at anvende eventListener, som derefter som regel vil medfølge en anden tilstand. <br />
+            <br />
+            I eksemplet til venstre kan man se, at jeg gennem query.selector kalder på et id med navnet ‘start’. Derefter bruger jeg classList som er en property der enten tilføjer eller fjerner en klasse. Ved at bruge classList.remove fjerner jeg en
+            klasse, som i mit tilfælde er en class med navnet ‘hide’. <br />
+            <br />
+            I linjen nedenunder bruger jeg document.query.selector til at lede efter id ‘start_btn’. Derefter bruger jeg addEventListener til at lytte efter et museklik på knappen, som vil sætte funktionen SidenVises i gang. I linjen efter sættes
+            baggrundsmusikken til at spille.
           </p>
         </div>
+        <!-- <img src="/assets/04.04.01-baggrund.png" alt="04.04.01 baggrund" /> -->
       </div>
       <hr />
     </main>
