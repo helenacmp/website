@@ -81,6 +81,10 @@ ul {
   position: relative;
 }
 
+.nav-link:hover {
+  font-style: italic;
+}
+
 /* styling af tekst i navigationslinjen */
 .nav-link {
   text-decoration: none;
@@ -129,10 +133,52 @@ ul {
   margin: 10px;
 }
 
+.dropdown-item:hover {
+  font-style: italic;
+}
+
+/* ––––––––––––––––––– Klik Btn ––––––––––––––––––– */
+
+.klik_btn {
+  flex: 1 1 auto;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px #eee;
+  background-image: linear-gradient(to right, #f6d365 0%, #bd4c48 51%, #f6d365 100%);
+  font-family: proxima-nova, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 15px;
+  transition: 0.6s;
+}
+
+.klik_btn:hover {
+  background-position: right center;
+}
+
+/* ––––––––––––––––––– Footer ––––––––––––––––––– */
+
+.footer_tekst {
+  text-align: center;
+  color: black;
+}
+
+.footer {
+  padding: 5%;
+}
+
 /* ––––––––––––––––––– Forside ––––––––––––––––––– */
 
 .wrapper {
   background: url(../assets/red-orange.png) no-repeat;
+  object-fit: cover;
   display: grid;
   height: 100vh;
 }
@@ -156,10 +202,13 @@ ul {
   left: 10%;
 }
 
+.velkommen:hover {
+  font-style: italic;
+}
+
 /* ––––––––––––––––––– Header på sider ––––––––––––––––––– */
 
 .header {
-  position: relative;
   margin-top: 7%;
 }
 
@@ -240,23 +289,6 @@ ul {
   margin-bottom: 5%;
 }
 
-/* ––––––––––––––––––– Klik Btn ––––––––––––––––––– */
-
-.klik_btn:hover {
-  background-position: right center;
-}
-
-.klik_btn {
-  font-family: "Chromate";
-  color: white;
-  font-size: 16px;
-  text-decoration: none;
-  border-radius: 15px;
-  border-style: solid;
-  padding: 15px;
-  background-image: linear-gradient(to right, #f6d365 0%, #cb413c 51%, #f6d365 100%);
-}
-
 /* ––––––––––––––––––– Basic web ––––––––––––––––––– */
 
 .header_background {
@@ -265,9 +297,11 @@ ul {
   height: 45vh;
 }
 
-.header_headline {
-  position: relative;
-  top: 29%;
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .col_1_2 {
@@ -296,13 +330,6 @@ ul {
 col_1_2 img {
   width: 100%;
   margin: 5%;
-}
-
-/* ––––––––––––––––––– Gradient divider ––––––––––––––––––– */
-
-.gradient_divider {
-  height: 15vh;
-  width: 100%;
 }
 
 /* ––––––––––––––––––– Col_1_1 ––––––––––––––––––– */
@@ -447,15 +474,4 @@ col_1_2 img {
   border-width: thin;
   padding: 2%;
   margin: 2%;
-}
-
-/* ––––––––––––––––––– Footer ––––––––––––––––––– */
-
-.footer_tekst {
-  text-align: center;
-  color: black;
-}
-
-.footer {
-  padding: 5%;
 }
