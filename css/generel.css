@@ -309,6 +309,7 @@ ul {
   grid-template-columns: 1fr 2fr;
   margin: 5%;
   row-gap: 20px;
+  gap: 20px;
 }
 
 .web_box {
@@ -474,4 +475,180 @@ col_1_2 img {
   border-width: thin;
   padding: 2%;
   margin: 2%;
+}
+
+/*-------------Responsiv til max 1200 px------------*/
+
+@media screen and (max-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* ---------Porfolio site---------  */
+  .col_4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5%;
+  }
+
+  .box_1,
+  .box_2,
+  .box_3,
+  .box_4,
+  .box_5 {
+    background-color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: 1s;
+    border-style: solid;
+    border-width: thin;
+  }
+
+  /*------Basic web----------*/
+
+  .web_box {
+    border-style: solid;
+    border-color: rgb(69, 68, 68);
+    border-radius: 15px;
+    border-width: thin;
+    width: 100%;
+  }
+
+  .col_1_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5%;
+    gap: 10px;
+    row-gap: 20px;
+  }
+
+  .col_1_2 img {
+    width: 100%;
+  }
+
+  /*--------Basic UX--------*/
+
+  .web_box_wide {
+    border-style: solid;
+    border-color: rgb(69, 68, 68);
+    border-radius: 15px;
+    border-width: thin;
+    width: 100%;
+  }
+
+  /*--------Content--------*/
+
+  .col_1_2_content {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    row-gap: 20px;
+    gap: 5%;
+  }
+
+  /*--------Portfolio eksamen--------*/
+}
+
+/*-------------Responsiv til max 800 px------------*/
+
+@media screen and (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* ---------Porfolio site---------  */
+  .col_4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5%;
+  }
+
+  .header {
+    margin-top: 13%;
+  }
+
+  .overskrift {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .center {
+    position: relative;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 4%;
+  }
+
+  .box_1,
+  .box_2,
+  .box_3,
+  .box_4,
+  .box_5 {
+    background-color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: 1s;
+    border-style: solid;
+    border-width: thin;
+  }
+
+  /*------Basic web----------*/
+
+  .col_1_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10%;
+    row-gap: 20px;
+    gap: 10px;
+  }
+
+  .col_1_2 img {
+    width: 100%;
+  }
+
+  .web_box {
+    border-style: solid;
+    border-color: rgb(69, 68, 68);
+    border-radius: 15px;
+    border-width: thin;
+  }
+
+  .col_1_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .col_1_1 img {
+    order: +1;
+  }
+  /*------Basic UX----------*/
+
+  .web_box_wide {
+    border-style: solid;
+    border-color: rgb(69, 68, 68);
+    border-radius: 15px;
+    border-width: thin;
+  }
+
+  .col_1_1_1 {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .col_1_1_1 img {
+    width: 100%;
+    border-style: solid;
+    border-width: thin;
+  }
 }
