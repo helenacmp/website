@@ -452,22 +452,21 @@ col_1_2 img {
 
 .header_about {
   position: relative;
-  top: 32%;
-  grid-column: 2/5;
-  max-width: 800px;
+  grid-column: 2/4;
+  max-width: 100%;
+  margin: 5%;
 }
 
-.col_1_1_1_1 {
+.col_1_1_1_about {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.col_1_1_1_1 img {
-  width: 80%;
+.col_1_1_1_about img {
+  width: 75%;
   position: relative;
-  margin-top: 45%;
 }
 
 .col_1_1_about {
@@ -606,6 +605,43 @@ col_1_2 img {
   }
   .velkommen {
     font-size: 40px;
+  }
+
+  /*--------OM MIG--------*/
+
+  .col_1_1_1_about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .col_1_1_1_about img {
+    width: 75%;
+    position: relative;
+  }
+
+  .h2_about {
+    font-size: 30px;
+  }
+
+  .p_about {
+    font-size: 15px;
+  }
+
+  .col_1_1_about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .header_about {
+    position: relative;
+    grid-column: 2/3;
+    max-width: 100%;
+    margin: 5%;
   }
 }
 
@@ -768,7 +804,54 @@ col_1_2 img {
 
   .logo {
     position: relative;
-    max-width: 45%;
+    max-width: 40%;
     transition: 1s;
+  }
+
+  /*-----OMG MIG-------*/
+
+  .header_background_about {
+    background: url(../assets/red-orange.png) no-repeat;
+    background-size: cover;
+    height: 80vh;
+  }
+
+  .col_1_1_1_about {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 100%;
+  }
+
+  .col_1_1_1_about img {
+    top: 15%;
+    width: 40%;
+    position: relative;
+  }
+
+  .h2_about {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .p_about {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .header_about {
+    position: relative;
+    grid-column: auto;
+    max-width: 100%;
+    margin: 5%;
+  }
+
+  .col_1_1_about {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 5%;
   }
 }
