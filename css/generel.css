@@ -176,19 +176,24 @@ ul {
 
 /* ––––––––––––––––––– Forside ––––––––––––––––––– */
 
-.wrapper {
-  background: url(../assets/red-orange.png) no-repeat;
-  object-fit: cover;
+.col_1_1_hjem {
+  margin: 5%;
   display: grid;
-  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.body_image_hjem {
+  background: url(../assets/red-orange.png) no-repeat;
+  background-size: auto;
 }
 
 .logo {
-  max-width: 70%;
   position: relative;
-  top: 20%;
-  grid-column: 2/3;
+  max-width: 67%;
   transition: 1s;
+  top: 11%;
+  left: 10%;
 }
 
 .logo:hover {
@@ -197,9 +202,7 @@ ul {
 
 .velkommen {
   position: relative;
-  grid-column: 1/2;
-  top: 58%;
-  left: 10%;
+  top: 40%;
 }
 
 .velkommen:hover {
@@ -586,7 +589,24 @@ col_1_2 img {
     grid-row: auto;
   }
 
-  /*--------Portfolio eksamen--------*/
+  /*--------HJEM--------*/
+
+  .col_1_1_hjem {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15%;
+  }
+
+  .logo {
+    position: relative;
+    max-width: 70%;
+    transition: 1s;
+    grid-row: 2/3;
+  }
+  .velkommen {
+    font-size: 40px;
+  }
 }
 
 /*-------------Responsiv til max 800 px------------*/
@@ -722,5 +742,33 @@ col_1_2 img {
 
   .order {
     order: -1;
+  }
+
+  /*-----HJEM-------*/
+
+  .col_1_1_hjem {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15%;
+    max-width: 100%;
+  }
+
+  .velkommen {
+    position: relative;
+    font-size: 40px;
+    width: 400px;
+    margin-top: 8%;
+  }
+
+  .logo_flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    position: relative;
+    max-width: 45%;
+    transition: 1s;
   }
 }
