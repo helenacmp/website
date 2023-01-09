@@ -235,6 +235,7 @@ ul {
 
 .body_image {
   background: url(../assets/red-orange.png) no-repeat;
+  background-size: cover;
 }
 
 .col_4 {
